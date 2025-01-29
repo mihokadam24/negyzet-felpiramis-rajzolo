@@ -21,31 +21,44 @@ public class Main {
          * *
          *
         */
+        drawSeparator();
+        drawSquare();
+        drawSeparator();
+        drawPyramidOne();
+        drawSeparator();
+        drawPyramidTwo();
+        drawSeparator();
+    }
 
-        // spagetti kódban megvalósítva
+    public static void drawSeparator() {
+        System.out.println("----------");
+    }
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j <= 5; j++) {
+    // kiszervezve funkciókba
+    public static void drawSquare() {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
+    }
 
-        System.out.println();
+    public static void drawPyramidOne() {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
+    }
 
-        System.out.println();
+    public static void drawPyramidTwo() {
         for (int i = 1; i <= 5; i++) {
             for (int j = i; j <= 5; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
-
     }
 }
